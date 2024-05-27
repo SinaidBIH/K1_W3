@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,900');
+
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+  background: lightblue;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-button {
+  color: black;
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.Doos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.majn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Titel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
+
+.title,
+.Subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Subtitle {
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.Image_doos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  width: 441px;
+  height: 150px;
+  perspective: 1000px;
+  border-radius: 15px;
+  font-family: 'Glacial Indifference', sans-serif;
+  position: relative;
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.4s;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .front i {
+  font-size: 2em;
+}
+
+.card .front p {
+  margin-top: 10px;
+}
+
+.card .front {
+  background-color: white;
+}
+
+.card .back {
+  background-color: black;
+  color: #FFFF;
+  transform: rotateX(180deg);
+}
+
+.card:hover .front {
+  transform: rotateX(180deg);
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.icon-doos {
+  background-color: #CCCCCC;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-doos .fas {
+  color: white;
+  font-size: 24px;
+}
+
+.input{
+
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+
+}
+
+.area{
+
+
+  width: 200px;
+  height: 100px;
+  box-sizing: border-box;
+
+}
+
+.contact-form {
+  width: 500px;
+  padding: 20px;
+  background: lightblue;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.form-group {
+  width: 450px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #617A55;
+  color: #FFF8D6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
